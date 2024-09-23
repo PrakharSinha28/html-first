@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Image Text Extractor</title>
+    <style>
+        #video {
+            border: 1px solid black;
+            width: 640px;
+            height: 480px;
+        }
+        #output {
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+</head>
+<body>
+    <h1>Live Image Text Extractor</h1>
+    <video id="video" autoplay></video>
+    <button id="scanButton">Extract Text from Live Feed</button>
+    <h2>Extracted Text:</h2>
+    <pre id="output"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
